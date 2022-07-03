@@ -1,0 +1,159 @@
+.discos.variavel {
+  background-color: white;
+}
+
+/* CSS
+apos desenhado à lapis o "projeto arquitetonico" do que quero fazer.decide essa ordem:
+1. flex: body.section
+2. .torres: width: 22,2222222vw.height: 33,3333333vw; display fornecido
+3. #section: width: 66,6666667vw; height: 33,3333333vw; imagem de fundo de 3 palitos com a mesma proporção de unidades de medida
+4. .discos: height:'4.16666668'
+   .disco1: width:'4.44444444'; 
+   .disco2: width:'8.88888888'
+   .disco3: width:'13.3333333'
+   .disco4: width:'17.7777778' */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1586581277029-5769487f3881?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFtYm9vJTIwZm9yZXN0fGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section {
+  display: flex;
+  margin: 0;
+  width: 66.6666667vw;
+  height: 33.3333333vw;
+}
+
+.torres {
+  width: 22.2222222vw;
+  height: 33.3333333vw;
+  background-color: rgb(179, 216, 17);
+  border: black solid 0.2px;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.discos {
+  /* height: 4.16666668vw; */
+  height: 12.5%;
+  border-radius: 10px;
+  border: solid black 0.2px;
+}
+
+.disco1 {
+  width: 17.7777778vw;
+  background-color: rgb(66, 0, 151);
+}
+.disco2 {
+  width: 13.333333vw;
+  background-color: rgb(66, 0, 151);
+}
+.disco3 {
+  background-color: rgb(66, 0, 151);
+  width: 8.8888888vw;
+}
+.disco4 {
+  background-color: rgb(66, 0, 151);
+  width: 4.4444444vw;
+}
+
+@media (min-width: 1200px){
+body{
+  background-image: url(https://greensavers.sapo.pt/wp-content/uploads/2013/03/floresta.jpg);
+}
+}
